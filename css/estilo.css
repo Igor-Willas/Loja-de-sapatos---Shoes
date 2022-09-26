@@ -1,0 +1,612 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+        /* CABEÇALHO */
+
+:root {
+
+    --cor-principal: rgba(255, 255, 255, 1);
+    --cor-secundaria: rgba(194, 24, 91, 1);
+    --cor-da-sombra: rgba(139, 139, 139, 0.65);
+    --cor-dos-links: rgba(119, 119, 119, 1);
+    --cor-letras-destaque: rgba(0, 0, 0, 1);
+
+}
+
+/* CSS DO HEADER */
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px;
+
+    background: var(--cor-principal);
+    box-shadow: 0px 1px 20px var(--cor-da-sombra);
+}
+
+#logo img {
+    width: 150px;
+}
+
+.nav-bar {
+    display: none;
+}
+
+#menu-hamburguer img {
+    width: 30px;
+}
+
+#menu-mobile {
+    position: absolute;
+    top: 99px;
+    right: 0px;
+
+    display: none;
+
+    height: 215px;
+    width: 190px;
+
+    background-color: var(--cor-secundaria);
+}
+
+.menu-mobile-visivel {
+
+    display: block !important;
+}
+
+
+.nav-list-mobile {
+    display: flex;
+    flex-direction: column;
+    
+    list-style: none;
+}
+
+.nav-list-mobile a{
+
+    text-decoration: none;
+    color: var(--cor-dos-links);
+
+}
+
+.nav-item-mobile {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+
+    margin: 10px;
+    padding-bottom: 10px;
+}
+
+/* CSS DO BODY */
+
+.whatsappFlutuante {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+
+    z-index: 3;
+
+    width: 60px;
+}
+
+main {
+    padding-top: 100px;
+}
+
+.banner-principal {
+
+    width: 100vw;
+}
+
+main h1 {
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 82px;
+
+    text-align: center;
+
+    color: var(--cor-letras-destaque);
+}
+
+        /* SESSAO-UM DO SITE */
+
+#sessao-um {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 45px;
+
+}
+
+.exposicao-um img {
+
+    text-align: center;
+    width: 60vw;
+
+    margin: 30px;
+}
+
+.exposicao-dois img {
+
+    text-align: center;
+    width: 80vw;
+
+    margin-bottom: 30px;
+}
+
+        /* SESSÃO DE SAPATOS */
+
+#sessao-sapatos {
+
+    background-color: var(--cor-secundaria);
+
+    padding-bottom: 20px;
+
+}
+
+#sessao-sapatos h2 {
+
+    text-align: center;
+
+    font-weight: 800;
+    font-size: 44px;
+    line-height: 60px;
+
+    padding: 50px 0px;
+
+
+    color: var(--cor-principal);
+
+}
+
+.card-sapatos {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.card-list {
+
+    list-style: none;
+
+    margin-bottom: 30px;
+    
+    background-color: var(--cor-principal);
+    
+}
+
+.card-list a {
+
+    text-decoration: none;
+
+    display: flex;
+    flex-direction: column;
+
+    color: var(--cor-letras-destaque);
+
+}
+
+.card-informacoes {
+    display: flex;
+    flex-direction: column;
+
+    margin: 10px 0px 25px 9px;
+}
+
+
+        /* SESSAO TRÊS DO SITE */
+
+#sessao-tres {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 40px 0px;
+}
+
+.divisao-um {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin: 30px 0px;
+    
+}
+
+.informacoes-divisao-um {
+    font-weight: 600;
+    font-size: 26px;
+
+    color: var(--cor-letras-destaque);
+}
+
+.button-um {
+
+    margin: 26px 0px;
+
+}
+
+.detalhes {
+
+    padding: 20px 55px;
+
+    background-color: var(--cor-secundaria);
+    border: none;
+
+}
+
+.detalhes a {
+
+    text-decoration: none;
+
+    font-weight: 600;
+    font-size: 31px;
+
+    color: var(--cor-principal);
+
+}
+
+.imagem-divisao-um img {
+
+    width: 363px;
+
+}
+
+.divisao-dois img {
+
+    width: 263px;
+
+}
+
+        /* CSS DO FOOTER/RODAPE  */
+
+footer {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100%;
+
+    background-color: var(--cor-secundaria);
+}
+
+.logo-rodape {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 20px;
+
+}
+
+.logo-img img {
+
+    margin-top: 20px;
+}
+
+.logo-rodape p {
+
+    text-align: justify;
+    
+    width: 220px;
+    font-weight: 400;
+    font-size: 14px;
+
+    color: var(--cor-principal);
+}
+
+#informacoes-rodape {
+    display: flex;
+    flex-direction: row;
+}
+
+#informacoes-rodape div {
+
+    margin: 0px 30px;
+}
+
+#informacoes-rodape span {
+
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 27px;
+
+    color: var(--cor-principal);
+
+}
+
+.info-list {
+
+    list-style: none;
+    margin-top: 20px;
+
+}
+
+.info-item a {
+
+    text-decoration: none;
+
+    font-weight: 300;
+    font-size: 20px;
+
+    color: var(--cor-principal);
+
+}
+
+
+
+
+
+
+
+/* CSS DOS MEDIA QUERYS */
+
+
+
+@media (min-width: 600px) {
+
+    body h1 {
+        font-weight: 800;
+        font-size: 60px;
+        line-height: 82px;
+
+        text-align: center;
+
+        margin: 25px 0px;
+
+        color: var(--cor-letras-destaque);
+    }
+
+    .card-sapatos {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+
+        flex-wrap: wrap;
+
+        gap: 10px;
+
+
+    }
+
+}
+
+@media (min-width: 760px) {
+    
+    .card-sapatos {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+
+        flex-wrap: wrap;
+
+
+    }
+
+    #sessao-tres {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        margin: 40px 0px;
+    }
+
+    .divisao-dois img {
+
+        width: 353px;
+    
+    }
+
+            /* CSS DO FOOTER  */
+
+    footer {
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+    }
+
+
+}
+
+@media (min-width: 768px) {
+    
+    /* CSS DO HEADER */
+    
+    .nav-bar {
+        display: block;
+    }
+    
+    .nav-list {
+        display: flex;
+        
+        list-style: none;
+    }
+    .nav-list a {
+        
+        text-decoration: none;
+        color: var(--cor-dos-links);
+    }
+    
+    .nav-item {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 33px;
+        
+        
+        padding-right: 30px;
+    }
+    
+    
+    #menu-hamburguer {
+        display: none;
+    }
+    
+    /* CSS DO BODY */
+    
+    body h1 {
+        font-weight: 800;
+        font-size: 60px;
+        line-height: 82px;
+        
+        text-align: center;
+        
+        margin: 25px 0px;
+        
+        color: var(--cor-letras-destaque);
+    }
+    
+    
+}
+
+
+@media (min-width: 790px) {
+    
+    .card-sapatos {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+
+        flex-wrap: wrap;
+
+        gap: 21px;
+
+
+    }
+    
+
+}
+
+@media (min-width: 900px) {
+    
+    #sessao-um {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        
+        width: 100vw;
+    }
+    
+    .exposicao-um img {
+        width: 86%;
+        margin: 0px 30px;
+    }
+
+    .exposicao-dois img {
+
+        width: 90%;
+        margin: 0;
+
+    }
+
+    .card-sapatos {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+
+        flex-wrap: wrap;
+
+        gap: 10px;
+
+
+    }
+
+    #sessao-tres {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        margin: 40px 0px;
+    }
+
+    .divisao-um img {
+
+        width: 428px;
+
+    }
+
+    .divisao-dois img {
+
+        width: 400px;
+    
+    }
+
+    
+}
+
+@media (min-width: 1058px) {
+
+    #sessao-um {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        width: 100vw;
+    }
+
+    .exposicao-um img {
+        width: 100%;
+        margin: 0px 30px;
+    }
+
+    .exposicao-dois img {
+
+        width: 100%;
+        margin: 0;
+
+    }
+
+            /* SESSÃO TRÊS */
+
+#sessao-tres {
+
+    margin: 40px 80px;;
+
+}
+
+    .divisao-um img {
+
+        width: 570px;
+
+    }
+
+    .divisao-dois img {
+
+        width: 500px;
+    
+    }
+
+}
