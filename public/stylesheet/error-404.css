@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    --cor-principal: rgba(255, 255, 255, 1);
+    --cor-secundaria: rgba(194, 24, 91, 1);
+    --cor-da-sombra: rgba(139, 139, 139, 0.65);
+    --cor-dos-links: rgba(119, 119, 119, 1);
+    --cor-letras-destaque: rgba(0, 0, 0, 1);
+
+}
+
+
+h1{
+    color: var(--cor-dos-links);
+    margin-top: 165px;
+    font-size: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

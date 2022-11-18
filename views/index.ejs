@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -8,40 +9,8 @@
     <title>Shoes Store</title>
 </head>
 <body>
-    <header>
-
-        <div id="logo">
-
-            <img src="./images/Logo-Shoes.png" alt="Logo da Shoes Store">
-
-        </div>
-
-        <nav class="nav-bar">
-            <ul class="nav-list">
-                <li class="nav-item"><a href="">Todos os produtos</a></li>
-                <li class="nav-item"><a href="">Coleções</a></li>
-                <li class="nav-item"><a href="">Outlet</a></li>
-            </ul>
-        </nav>
-
-        <div id="menu-hamburguer">
-
-            <img class="menu-hamburguer" src="./images/icon/menu-hamburguer.png" alt="ícone do menu hamburguer">
-
-            <div id="menu-mobile">
-
-                <nav class="nav-bar-mobile">
-                    <ul class="nav-list-mobile">
-                        <li class="nav-item-mobile"><a href="">Todos os produtos</a></li>
-                        <li class="nav-item-mobile"><a href="">Coleções</a></li>
-                        <li class="nav-item-mobile"><a href="">Outlet</a></li>
-                    </ul>
-                </nav>
-
-            </div>
-
-        </div>
-    </header>
+    
+    <%- include('partials/header.ejs') %>
 
     <main>
         <a href="#">
@@ -145,52 +114,4 @@
 
     </main>
 
-    <footer>
-
-        <section class="logo-rodape">
-            
-            <div class="logo-img">
-                <img src="./images/logo-footer.png" alt="logo shoes store do rodape">
-            </div>
-
-            <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-
-        </section>
-
-        <section id="informacoes-rodape">
-
-            <div>
-                <span>categorias</span>
-                <ul class="info-list">
-                    <li class="info-item"><a href="#">sandálias</a></li>
-                    <li class="info-item"><a href="#">botas</a></li>
-                    <li class="info-item"><a href="#">tênis</a></li>
-                    <li class="info-item"><a href="#">oxford</a></li>
-                    <li class="info-item"><a href="#">coturnos</a></li>
-                </ul>
-            </div>
-
-            <div>
-                <span>institucional</span>
-                <ul class="info-list">
-                    <li class="info-item"><a href="#">sobre nós</a></li>
-                    <li class="info-item"><a href="#">perguntas frequentes</a></li>
-                    <li class="info-item"><a href="#">política de privacidade</a></li>
-                    <li class="info-item"><a href="#">rastreamento de pedidos</a></li>
-                    <li class="info-item"><a href="#">trabalhe conosco</a></li>
-                    <li class="info-item"><a href="#">contato</a></li>
-                </ul>
-            </div>
-
-        </section>
-
-    </footer>
-
-    <script src="/javascript/index.js">
-
-    </script>
-    
-</body>
-</html>
+    <%- include('partials/footer.ejs') %>

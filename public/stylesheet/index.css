@@ -16,77 +16,6 @@
 
 }
 
-/* CSS DO HEADER */
-
-header {
-    position: fixed;
-    top: 0;
-    width: 100vw;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 10px;
-
-    background: var(--cor-principal);
-    box-shadow: 0px 1px 20px var(--cor-da-sombra);
-}
-
-#logo img {
-    width: 150px;
-}
-
-.nav-bar {
-    display: none;
-}
-
-#menu-hamburguer img {
-    width: 30px;
-}
-
-#menu-mobile {
-    position: absolute;
-    top: 99px;
-    right: 0px;
-
-    display: none;
-
-    height: 215px;
-    width: 190px;
-
-    background-color: var(--cor-secundaria);
-}
-
-.menu-mobile-visivel {
-
-    display: block !important;
-}
-
-
-.nav-list-mobile {
-    display: flex;
-    flex-direction: column;
-    
-    list-style: none;
-}
-
-.nav-list-mobile a{
-
-    text-decoration: none;
-    color: var(--cor-dos-links);
-
-}
-
-.nav-item-mobile {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 33px;
-
-    margin: 10px;
-    padding-bottom: 10px;
-}
-
 /* CSS DO BODY */
 
 .whatsappFlutuante {
@@ -353,14 +282,7 @@ footer {
 
 }
 
-
-
-
-
-
-
 /* CSS DOS MEDIA QUERYS */
-
 
 
 @media (min-width: 600px) {
@@ -436,38 +358,7 @@ footer {
 }
 
 @media (min-width: 768px) {
-    
-    /* CSS DO HEADER */
-    
-    .nav-bar {
-        display: block;
-    }
-    
-    .nav-list {
-        display: flex;
-        
-        list-style: none;
-    }
-    .nav-list a {
-        
-        text-decoration: none;
-        color: var(--cor-dos-links);
-    }
-    
-    .nav-item {
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 33px;
-        
-        
-        padding-right: 30px;
-    }
-    
-    
-    #menu-hamburguer {
-        display: none;
-    }
-    
+
     /* CSS DO BODY */
     
     body h1 {
