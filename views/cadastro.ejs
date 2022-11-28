@@ -1,11 +1,57 @@
-<%- include('partials/header.ejs') %>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet/cadastro.css">
+    <!-- <link rel="stylesheet" href="stylesheet/header.css"> -->
+    <link rel="stylesheet" href="../public/stylesheet/header.css">
+    <title>Cadastro</title>
+</head>
+<body>
+
+    <%- include('partials/header.ejs') %>
 
     <main>
-        <div>
-            <form method="post" action="">
-                
-            </form>
+        <div class="container">
+            <div class="form">
+                <form method="POST" action="">
+                    
+                    <h1>Faça seu cadastro aqui:</h1>
+                    
+                    <br>
+                    <br>
+
+                    <div class="div-style-form">
+                        <label for="fist-name" class="label-style">Nome:</label>
+                        <br>
+                        <input type="text" name="nome" id="fist-name" class="input-style" placeholder="Seu primeiro nome...">
+                    </div>
+                    <div class="div-style-form">
+                        <label for="sobrenome">Sobrenome:</label>
+                        <br>
+                        <input type="text" name="sobrenome" id="sobrenome" class="input-style" placeholder="Seu sobrenome...">
+                    </div>
+                    <div class="div-style-form">
+                        <label for="email">Email:</label>
+                        <br>
+                        <input type="email" name="email" id="email" class="input-style" placeholder="seuemail@gmail.com">
+                    </div>
+                    <div class="div-style-form">
+                        <label for="senha">Senha:</label>
+                        <br>
+                        <input type="password" name="senha" id="senha" class="input-style" placeholder="Digite uma senha...">
+                    </div>
+                    <div class="div-style-form">
+                        <label for="telefone">Digite seu número:</label>
+                        <br>
+                        <input type="number" name="telefone" id="telefone" class="input-style" placeholder="ex.: (**) *****-****">
+                    </div>
+                </form>
+            </div>
         </div>
     </main>
+    
 
 <%- include('partials/footer.ejs') %>
